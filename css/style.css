@@ -1,0 +1,296 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --cor-primaria: rgb(255, 194, 52);
+    --cor-secundaria: rgb(65, 31, 9);
+    --cor-terciaria: rgb(223, 28, 28);
+    --fonte-logo: 'Bebas Neue', sans-serif;
+    --fonte-burguer: 'Alfa Slab One', serif;
+    --fonte-paragrafos: 'Rubik', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container-header {
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.menu-header ul li a {
+    display: flex;
+    text-decoration: none;
+    font-family: var(--fonte-logo);
+    color: var(--cor-secundaria);
+    font-size: 1.5rem;
+}
+
+.menu-header ul li a:hover {
+    color: var(--cor-terciaria);
+}
+
+.menu-header ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.container-main {
+    width: 100%;
+    background-color: var(--cor-primaria);
+
+    display: flex;
+    padding: 2rem 0 8rem 0;
+}
+
+.main-coluna-1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.main-coluna-1 h1 {
+    font-size: 3rem;
+    font-family: var(--fonte-burguer);
+    text-transform: uppercase;
+    color: var(--cor-secundaria);
+    display: flex;
+    position: relative;
+}
+
+.main-coluna-1 h1:first-child {
+    font-size: 5rem;
+}
+
+
+.main-coluna-2 {
+    width: 50%;
+    display: flex;
+    position: relative;
+}
+
+.hamburguer {
+    filter: drop-shadow(0px 22px 13px #00000065);
+    position: relative;
+}
+
+.main-coluna-2 figure {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tag-preco {
+    position: absolute;
+    bottom: 1rem;
+}
+
+.container-cards {
+    width: 100%;
+    background-color: #FEFEFE;
+}
+
+.etiqueta-tasty {
+    width: 10%;
+    background-color: var(--cor-primaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 45%;
+    padding: 0.5rem;
+}
+
+
+.etiqueta-tasty p {
+    font-family: var(--fonte-logo);
+    color: var(--cor-secundaria);
+}
+
+.titulo-subtitulo {
+    color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.titulo-subtitulo h2 {
+    font-family: var(--fonte-burguer);
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.titulo-subtitulo p {
+    font-family: var(--fonte-paragrafos);
+}
+
+.cards {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.card img {
+    filter: drop-shadow(0px 22px 13px #00000065);
+}
+
+.card h3 {
+    font-family: var(--fonte-logo);
+    color: var(--cor-secundaria);
+}
+
+.card p {
+    font-family: var(--fonte-paragrafos);
+    color: var(--cor-secundaria);
+}
+
+.botao {
+    background-color: var(--cor-terciaria);
+    font-family: var(--fonte-burguer);
+    border: none;
+    border-radius: 3px;
+    padding: 1rem;
+}
+
+.botao a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.botao:hover {
+    background-color: var(--cor-primaria);
+}
+
+.reserva {
+    color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.reserva h2:first-child {
+    font-family: var(--fonte-logo);
+}
+
+.reserva h2 {
+    font-family: var(--fonte-burguer);
+    text-transform: uppercase;
+    color: var(--cor-secundaria);
+    font-size: 2rem;
+}
+
+.formularios {
+    max-height: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 4rem;
+}
+
+.formulario-coluna-1,
+.formulario-coluna-2 {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.conteiner-formularios .formulario input {
+    height: 4rem;
+    width: 20rem;
+    background-color: var(--cor-primaria);
+    font-family: var(--fonte-logo);
+    border: none;
+    border-radius: 3px;
+    padding: 1rem;
+}
+
+.conteiner-formularios .formulario-coluna-2 button {
+    height: 4rem;
+    width: 20rem;
+}
+
+footer {
+    max-height: 100%;
+    max-width: 100%;
+    background-image: url('../img/rodape/fundo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4rem;
+}
+
+.footer-colunas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 4rem;
+}
+
+.footer-descricao {
+    width: 50%;
+    justify-content: center;
+}
+
+.footer-descricao p {
+    color: #FEFEFE;
+    font-family: var(--fonte-paragrafos);
+    text-align: justify;
+}
+
+.footer-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.footer-info h3 {
+    color: #FEFEFE;
+    font-family: var(--fonte-logo);
+}
+
+.footer-info .local,
+.footer-info .email {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-social {
+    display: flex;
+    padding: 4rem;
+    justify-content: space-between;
+}
+
+.footer-social small {
+    color: #FEFEFE;
+    font-family: var(--fonte-logo);
+}
