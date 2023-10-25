@@ -26,6 +26,13 @@
     left: 35%;
   }
 
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+
   .formularios{
     display: flex;
     flex-wrap: wrap;

@@ -1,5 +1,6 @@
 * {
     padding: 0;
+    border: 0;
     margin: 0;
     box-sizing: border-box;
     --cor-primaria: rgb(255, 194, 52);
@@ -250,7 +251,7 @@ footer {
 .footer-colunas {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:space-around;
     gap: 4rem;
     padding: 4rem;
 }
@@ -281,6 +282,7 @@ footer {
 .footer-info .local,
 .footer-info .email {
     display: flex;
+    justify-content: flex-end;
     gap: 2rem;
 }
 
